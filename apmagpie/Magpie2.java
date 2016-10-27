@@ -38,11 +38,33 @@ public class Magpie2
         else if (statement.indexOf("mother") >= 0
                 || statement.indexOf("father") >= 0
                 || statement.indexOf("sister") >= 0
-                || statement.indexOf("brother") >= 0
-                || statement.indexOf("cat") >= 0
-                || statement.indeOf("dog") >= 0)
+                || statement.indexOf("brother") >= 0)
         {
             response = "Tell me more about your family.";
+        }
+        else if (statement.indexOf("cat") >= 0)
+        {
+            response = "Tell me more about your pets.";
+        }
+        else if (statement.indexOf("Mr.") >=0)
+        {
+            response = "He sounds super awesome and cool and you should give him $100.";
+        }
+        else if (statement.trim().length() == 0)
+        {
+            response = "Say something, pls.";
+        }
+        else if (statement.indexOf("sports") >=0)
+        {
+            response = "What type of sports?";
+        }
+        else if (statement.indexOf("yes") >=0)
+        {
+            response = "YAY!";
+        }
+        else if (statement.indexOf("games") >=0)
+        {
+            response = "What type of games??";
         }
         else
         {
@@ -78,7 +100,6 @@ public class Magpie2
         {
             response = "You don't say.";
         }
-        else if (whichResponse == 4)
         return response;
     }
 }
